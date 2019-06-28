@@ -11,7 +11,12 @@
 <body>
     <div class="container">
         <div id="app">
-            <h1>Name:{{ name}}</h1>
+           <h2>Counter:{{ counter }}</h2>
+            <button type="button" v-on:click="incement(1)" name="button">Increment By 1</button>
+            <button type="button"  v-on:click="decement(1)" name="button">Decrement By 1</button>
+
+            <button type="button" @dblclick="incement(5)" >Increment By 5</button>
+            <button type="button"  v-on:dblclick="decement(5)" >Decrement By 5</button>
         </div>
     </div>
     <script src="app.js"></script>
