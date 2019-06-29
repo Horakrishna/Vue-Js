@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Modifire</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Counter:{{ counter }}</h1>
+        <button type="button" name="button" @click.once="incrementby1">click+1</button>
+    </br></br>
+    <a href="https://www.google.com" @click.prevent>Google </a>
+    </div>
+    <form action="#" class="" method="post" @submit.prevent>
+        <button type="submit" name="button" >Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

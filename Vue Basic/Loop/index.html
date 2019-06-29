@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop Statement</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2 v-if="isActive"> This is the if Statement</h2>
+        <h2 v-else>This is else Statement</h2>
+        <h2 v-show>This is Show state</h2>
+        
+
+    </br>
+    <button type="button" @click="incrementby1">Click Me</button>
+        <h2>Count {{ count }}</h2>
+        <p v-if="count == 1">This is vaule =1</p>
+        <p v-else-if="count ==2 ">This is vaule =2</p>
+        <p v-else-if="Count ==3">This is vaule =3</p>
+        <p v-else >This value not match.</p>
+
+       <h1>This is Input Message</h1>
+       <p>Message:{{ message }}</p>
+       <input type="text" v-model="message">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

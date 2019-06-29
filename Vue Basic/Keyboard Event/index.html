@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Event Handeling </title>
+    <title>KeyBoard Event </title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <div id="app">
-           <h2>Counter:{{ counter }}</h2>
-            <button type="button" v-on:click="incement(1)" name="button">Increment By 1</button>
-            <button type="button"  v-on:click="decement(1)" name="button">Decrement By 1</button>
+            <input type="text" placeholder="Key Press..." @keypress="keyPressfunction"></br></br></br>
 
-            <button type="button" @dblclick="incement(5)" >Increment By 5</button>
-            <button type="button"  v-on:dblclick="decement(5)" >Decrement By 5</button>
+            <input type="text" placeholder="Key  Up..." @keyup="keyupfunction"></br></br></br>
+            
+            <input type="text" placeholder="Key  Down..." @keydown="keydownfunction"></br></br></br>
 
-            <p v-if="true">This is if statement</p>
-            <p v-else>This is else statement</p>
         </div>
     </div>
     <script src="app.js"></script>
